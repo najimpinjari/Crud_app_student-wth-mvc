@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Crud_app_student.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2> 
+<div>
+    @TempData["success"]
+    @TempData["Update"]
+    @TempData["detals"]
+</div>
+<style>
+    body{
+        background-color : lightseagreen ;
+    }
+    
+</style>
+
+<button type="button" class="btn btn-dark" value="CreateStudent">
+    @Html.ActionLink("Create New", "CreateStudent")
+</button>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fees)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fees)
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning">
+                @Html.ActionLink("Edit", "UpdateStudent", new { id = item.Id }) 
+            </button>
+            <button class="btn btn-dark ">
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) 
+            </button>
+            <button class="btn btn-danger">
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </button>
+        </td>
+    </tr>
+}
+
+</table>
