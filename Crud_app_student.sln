@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud_app_student", "Crud_app_student\Crud_app_student.csproj", "{0A13704E-505D-4613-BFA3-BEA9E4917868}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webform_with_crud", "webform_with_crud\webform_with_crud.csproj", "{4FF1043F-3862-43C5-A539-74C194BC078A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A13704E-505D-4613-BFA3-BEA9E4917868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A13704E-505D-4613-BFA3-BEA9E4917868}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A13704E-505D-4613-BFA3-BEA9E4917868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF1043F-3862-43C5-A539-74C194BC078A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF1043F-3862-43C5-A539-74C194BC078A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF1043F-3862-43C5-A539-74C194BC078A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF1043F-3862-43C5-A539-74C194BC078A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
